@@ -1,0 +1,35 @@
+.heading {
+  padding-top: 15px;
+  padding-left: 23px;
+  padding-right: 23px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    &-left {
+      width: 60px;
+    }
+
+    &-right {
+      flex: 1;
+      min-width: 1px;
+      max-width: 100%;
+      padding-left: 13px;
+    }
+  }
+
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+  }
+
+  span {
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12px;
+  }
+}
