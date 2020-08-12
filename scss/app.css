@@ -159,12 +159,39 @@ picture {
     font-size: 16px;
     font-weight: 700;
     line-height: 19px; }
+    .content__desc span {
+      font-size: 14px;
+      font-weight: 300; }
   .content__form {
     display: flex;
     flex-direction: column; }
     .content__form-field {
       position: relative;
       padding-bottom: 10px; }
+    .content__form-agent {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 40px;
+      border-radius: 5px;
+      background-color: #ffffff;
+      color: #363636;
+      font-size: 16px;
+      transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; }
+      .content__form-agent.is-active {
+        background-color: #00a3ff;
+        color: #ffffff;
+        transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; }
+      .content__form-agent-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 65px;
+        padding-bottom: 75px; }
+        .content__form-agent-wrapper > div {
+          width: 100%;
+          max-width: calc((100% - 50px) / 3); }
     .content__form input {
       outline: none;
       position: relative;

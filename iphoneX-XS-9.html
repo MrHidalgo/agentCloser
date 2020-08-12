@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="scss/app.css" />
 
-    <title>iPhone X|XS - 6</title>
+    <title>iPhone X|XS - 9</title>
 </head>
 <body>
 
@@ -40,29 +40,22 @@
             <div class="content__wrapper">
 
                 <h1 class="content__title">We’d love your feedback</h1>
-                <p class="content__desc">First, tell us about yourself.</p>
+                <p class="content__desc">Who did you interact with on this transaction? <span>(choose all that apply)</span></p>
 
                 <form action="" method="" autocomplete="off" class="content__form">
-                    <div class="content__form-field">
-                        <label>
-                            <input type="text" name="" placeholder="Full Name">
-                        </label>
+
+                    <div class="content__form-agent-wrapper">
+                        <div>
+                            <a href="#" class="content__form-agent">Corey</a>
+                        </div>
+                        <div>
+                            <a href="#" class="content__form-agent">Laura</a>
+                        </div>
+                        <div>
+                            <a href="#" class="content__form-agent">Wyatt</a>
+                        </div>
                     </div>
-                    <div class="content__form-field">
-                        <label>
-                            <input type="text" name="" placeholder="Street Address">
-                        </label>
-                    </div>
-                    <div class="content__form-field">
-                        <label>
-                            <input type="text" name="" placeholder="City, State & Zip">
-                        </label>
-                    </div>
-                    <div class="content__form-field">
-                        <label>
-                            <input type="text" name="" placeholder="Transaction Month/Year">
-                        </label>
-                    </div>
+
                     <div class="content__form-field">
                         <button type="submit">
                             <span>Next</span>
@@ -77,4 +70,19 @@
     </div>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+    (function() {
+        function toggleAgent() {
+            $('.content__form-agent').on('click', (ev) => {
+                $('.content__form-agent').removeClass('is-active');
+                $(ev.currentTarget).addClass('is-active');
+            });
+        }
+
+        window.addEventListener('load', (ev) => {
+            toggleAgent();
+        }, false);
+    })();
+</script>
 </html>
