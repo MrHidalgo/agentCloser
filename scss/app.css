@@ -390,9 +390,6 @@ picture {
     .nav__link:not(:last-of-type) {
       border-right: 1px solid rgba(206, 206, 206, 0.35); }
 
-.describe__wrapper-1 {
-  padding: 30px 19px; }
-
 .info__title {
   padding-bottom: 2px;
   color: #262626;
@@ -438,6 +435,9 @@ picture {
     .info__list li span {
       color: #262626;
       font-size: 16px; }
+
+.describe__wrapper-1 {
+  padding: 30px 19px; }
 
 .agent {
   position: relative;

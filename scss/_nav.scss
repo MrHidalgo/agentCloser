@@ -1,0 +1,25 @@
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+  border-radius: 0 0 5px 5px;
+  background-color: #ffffff;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-width: 1px;
+    max-width: 100%;
+    line-height: 20px;
+    font-size: 14px;
+    color: #3B3B3B;
+
+    &:not(:last-of-type) {
+      border-right: 1px solid rgba(#CECECE, 0.35);
+    }
+  }
+}
