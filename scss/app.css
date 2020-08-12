@@ -192,6 +192,36 @@ picture {
         .content__form-agent-wrapper > div {
           width: 100%;
           max-width: calc((100% - 50px) / 3); }
+    .content__form-feedback {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #ffffff;
+      color: #363636;
+      font-size: 16px;
+      transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; }
+      .content__form-feedback.is-active {
+        background-color: #00a3ff;
+        color: #ffffff;
+        transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; }
+        .content__form-feedback.is-active img {
+          filter: invert(1);
+          transition: filter 0.3s ease-in-out; }
+      .content__form-feedback-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 65px 46px 75px; }
+      .content__form-feedback img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+        transition: filter 0.3s ease-in-out; }
     .content__form input {
       outline: none;
       position: relative;

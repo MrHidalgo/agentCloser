@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="scss/app.css" />
+
+    <title>iPhone X|XS - 11</title>
+</head>
+<body>
+
+    <div class="body body--start body--black">
+
+        <section id="heading" class="heading">
+            <div class="heading__wrapper">
+
+                <div class="heading__wrapper-left">
+                    
+                    <div class="logo logo--heading">
+                        <a href="#" class="logo__btn">
+                            <img src="img/logo-top.png" srcset="img/logo-top@2x.png 2x, img/logo-top@3x.png 3x" alt="">
+                            <img src="img/logo-bottom.png" srcset="img/logo-bottom@2x.png 2x, img/logo-bottom@3x.png 3x" alt="">
+                        </a>
+                    </div>
+                    
+                </div>
+                
+                <div class="heading__wrapper-right">
+                    <p>The Minnesota Real Estate Group</p>
+                    <span>- Corey Hennagir | Laura Peters | Wyatt Samuelson -</span>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="content" class="content">
+            <div class="content__wrapper">
+
+                <h1 class="content__title">We’d love your feedback</h1>
+                <p class="content__desc">Would you recommend us to family, friends and acquantences?</p>
+
+                <form action="" method="" autocomplete="off" class="content__form">
+
+                    <div class="content__form-feedback-wrapper">
+                        <div>
+                            <a href="#" class="content__form-feedback">
+                                <img src="img/like.svg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="content__form-feedback">
+                                <img src="img/dislike.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="content__form-field">
+                        <button type="submit">
+                            <span>Next</span>
+                            <img src="img/arrow-r.png" alt="">
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+    (function() {
+        function toggleFeedback() {
+            $('.content__form-feedback').on('click', (ev) => {
+                $('.content__form-feedback').removeClass('is-active');
+                $(ev.currentTarget).addClass('is-active');
+            });
+        }
+
+        window.addEventListener('load', (ev) => {
+            toggleFeedback();
+        }, false);
+    })();
+</script>
+</html>
