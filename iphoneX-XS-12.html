@@ -54,7 +54,7 @@
                     </div>
 
                     <div class="content__form-field">
-                        <a href="/iphoneX-XS-13.html">
+                        <a href="/iphoneX-XS-13.html" btn-next-js disabled>
                             <span>Next</span>
                             <img src="img/arrow-r.png" alt="">
                         </a>
@@ -72,8 +72,13 @@
     (function() {
         function toggleType() {
             $('.content__form-type').on('click', (ev) => {
-                $('.content__form-type').removeClass('is-active');
-                $(ev.currentTarget).addClass('is-active');
+                $(ev.currentTarget).toggleClass('is-active');
+
+                if($('.content__form-type').hasClass('is-active')) {
+                    $('[btn-next-js]').removeAttr('disabled');
+                } else {
+                    $('[btn-next-js]').attr('disabled', true);
+                }
             });
         }
 

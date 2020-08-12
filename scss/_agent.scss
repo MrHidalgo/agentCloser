@@ -43,6 +43,10 @@
         padding-bottom: 20px;
       }
 
+      &-wrapper {
+        height: auto;
+      }
+
       &-pagination {
         display: flex;
         align-items: center;
@@ -67,6 +71,7 @@
 
       &-slide {
         display: flex;
+        height: auto;
 
         &-left {
           overflow: hidden;
@@ -152,7 +157,12 @@
         padding-right: 19px;
       }
 
+      &-wrapper {
+        height: auto;
+      }
+
       &-slide {
+        height: auto;
         padding: 6px 5px;
         border-radius: 5px;
         background-color: rgba(247, 247, 247, 1);

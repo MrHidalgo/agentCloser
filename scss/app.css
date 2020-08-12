@@ -189,7 +189,13 @@ picture {
         border: none;
         box-shadow: none;
         border-radius: 5px;
-        background-color: #00a3ff; }
+        background-color: #00a3ff;
+        transition: opacity 0.3s ease-in-out; }
+        .content__form-field a[disabled],
+        .content__form-field button[disabled] {
+          opacity: 0.55;
+          pointer-events: none;
+          transition: opacity 0.3s ease-in-out; }
         .content__form-field a span,
         .content__form-field button span {
           color: #ffffff;
@@ -286,6 +292,8 @@ picture {
       padding-bottom: 21px; }
       .content__form-slider .swiper-container {
         padding-bottom: 31px; }
+      .content__form-slider .swiper-wrapper {
+        height: auto; }
       .content__form-slider .swiper-slide {
         width: 100%;
         height: 399px;
@@ -468,6 +476,8 @@ picture {
       display: flex; }
       .agent__carousel .swiper-container {
         padding-bottom: 20px; }
+      .agent__carousel .swiper-wrapper {
+        height: auto; }
       .agent__carousel .swiper-pagination {
         display: flex;
         align-items: center;
@@ -485,7 +495,8 @@ picture {
             background-color: #707070;
             transition: background-color 0.3s ease-in-out; }
       .agent__carousel .swiper-slide {
-        display: flex; }
+        display: flex;
+        height: auto; }
         .agent__carousel .swiper-slide-left {
           overflow: hidden;
           display: flex;
@@ -539,7 +550,10 @@ picture {
     .agent__slider .swiper-container {
       padding-left: 19px;
       padding-right: 19px; }
+    .agent__slider .swiper-wrapper {
+      height: auto; }
     .agent__slider .swiper-slide {
+      height: auto;
       padding: 6px 5px;
       border-radius: 5px;
       background-color: #f7f7f7; }

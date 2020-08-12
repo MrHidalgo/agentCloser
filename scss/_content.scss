@@ -43,6 +43,13 @@
         box-shadow: none;
         border-radius: 5px;
         background-color: rgba(0, 163, 255, 1);
+        @include transition(opacity);
+
+        &[disabled] {
+          opacity: 0.55;
+          pointer-events: none;
+          @include transition(opacity);
+        }
 
         span {
           color: #ffffff;
@@ -172,6 +179,10 @@
       .swiper {
         &-container {
           padding-bottom: 31px;
+        }
+
+        &-wrapper {
+          height: auto;
         }
 
         &-slide {

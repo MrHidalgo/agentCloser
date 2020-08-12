@@ -64,7 +64,7 @@
                         </label>
                     </div>
                     <div class="content__form-field">
-                        <a href="/iphoneX-XS-9.html">
+                        <a href="/iphoneX-XS-9.html" disabled>
                             <span>Next</span>
                             <img src="img/arrow-r.png" alt="">
                         </a>
@@ -77,4 +77,20 @@
     </div>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script >
+    window.addEventListener('load', (ev) => {
+        const btn = document.querySelector('.content__form a');
+
+        let sum = 0;
+
+        $('.content__form input').on('keyup', (ev) => {
+            if($('.content__form input').val().length) {
+                btn.removeAttribute('disabled');
+            } else {
+                btn.setAttribute('disabled', 'true');
+            }
+        });
+    }, false);
+</script>
 </html>
