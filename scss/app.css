@@ -161,7 +161,7 @@ picture {
     line-height: 19px; }
     .content__desc span {
       font-size: 14px;
-      font-weight: 300; }
+      font-weight: 400; }
   .content__form {
     display: flex;
     flex-direction: column; }
@@ -222,6 +222,30 @@ picture {
         height: auto;
         max-height: 100%;
         transition: filter 0.3s ease-in-out; }
+    .content__form-type {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 48px;
+      border-radius: 5px;
+      background-color: #ffffff;
+      color: #363636;
+      font-size: 16px;
+      transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; }
+      .content__form-type.is-active {
+        background-color: #00a3ff;
+        color: #ffffff;
+        transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; }
+      .content__form-type-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 65px;
+        padding-bottom: 75px; }
+        .content__form-type-wrapper > div {
+          width: 100%;
+          max-width: calc((100% - 35px) / 2); }
     .content__form input {
       outline: none;
       position: relative;
