@@ -36,6 +36,36 @@
     &-field {
       position: relative;
       padding-bottom: 10px;
+
+      a,
+      button {
+        outline: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+        border: none;
+        box-shadow: none;
+        border-radius: 5px;
+        background-color: rgba(0, 163, 255, 1);
+
+        span {
+          color: #ffffff;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 17px;
+        }
+
+        img {
+          display: block;
+          max-width: 11px;
+          height: auto;
+          max-height: 100%;
+          margin-left: 6px;
+        }
+      }
     }
 
     &-agent {
@@ -227,35 +257,6 @@
         font-size: 12px;
         font-weight: 300;
         line-height: 15px;
-      }
-    }
-
-    button {
-      outline: none;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 40px;
-      border: none;
-      box-shadow: none;
-      border-radius: 5px;
-      background-color: rgba(0, 163, 255, 1);
-
-      span {
-        color: #ffffff;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 17px;
-      }
-
-      img {
-        display: block;
-        max-width: 11px;
-        height: auto;
-        max-height: 100%;
-        margin-left: 6px;
       }
     }
   }
