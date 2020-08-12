@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="scss/app.css" />
+
+    <title>iPhone X|XS - 13</title>
+</head>
+<body>
+
+    <div class="body body--start body--black">
+
+        <section id="heading" class="heading">
+            <div class="heading__wrapper">
+
+                <div class="heading__wrapper-left">
+                    
+                    <div class="logo logo--heading">
+                        <a href="#" class="logo__btn">
+                            <img src="img/logo-top.png" srcset="img/logo-top@2x.png 2x, img/logo-top@3x.png 3x" alt="">
+                            <img src="img/logo-bottom.png" srcset="img/logo-bottom@2x.png 2x, img/logo-bottom@3x.png 3x" alt="">
+                        </a>
+                    </div>
+                    
+                </div>
+                
+                <div class="heading__wrapper-right">
+                    <p>The Minnesota Real Estate Group</p>
+                    <span>- Corey Hennagir | Laura Peters | Wyatt Samuelson -</span>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="content" class="content">
+            <div class="content__wrapper">
+
+                <h1 class="content__title">Write a brief review</h1>
+                <p class="content__desc">Write your own or choose one that describes your experience with us.</p>
+
+                <form action="" method="" autocomplete="off" class="content__form">
+
+                    <div class="content__form-field">
+                        <div class="content__form-slider">
+                            <div class="swiper-container briefSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <label>
+                                            <textarea name="">The Minnesota Real Estate Group made buying and selling a home at the same time seamless and painless.&#13;&#13;They were friendly, knowledgeable and patient as we went through this process. &#13;&#13;We always felt secure that we had an advocate working for our best interest. I would recommend them to any friends or family looking to buy or sell a home!</textarea>
+                                        </label>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <label>
+                                            <textarea name="">I will never call another Realtor. This Group is the most honest, professional and efficient in the Twin Cities!&#13;&#13;They provided all the attention and focus needed for us to easily buy and move into our new home!&#13;&#13;Best experience I’ve ever had buying a house.</textarea>
+                                        </label>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <label>
+                                            <textarea name="">The Minnesota Real Estate Group made buying and selling a home at the same time seamless and painless.&#13;&#13;They were friendly, knowledgeable and patient as we went through this process. &#13;&#13;We always felt secure that we had an advocate working for our best interest. I would recommend them to any friends or family looking to buy or sell a home!</textarea>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__form-field">
+                        <button type="submit">
+                            <span>Submit</span>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    (function() {
+        function slider() {
+            new Swiper('.briefSwiper', {
+                loop: false,
+                grabCursor: true,
+                freeMode: false,
+                effect: 'slide',
+                speed: 800,
+                slidesPerView: 1,
+                spaceBetween: 5,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                }
+            });
+        }
+
+        window.addEventListener('load', (ev) => {
+            slider();
+        }, false);
+    })();
+</script>
+</html>
