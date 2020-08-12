@@ -1,0 +1,220 @@
+.mobile-wrapper {
+  min-height: 100vh;
+  background-color: #363636;
+  color: #fff;
+  padding: 15px 18px;
+  font-family: 'Helvetica Neue Regular', sans-serif;
+  box-sizing: border-box;
+}
+
+.mobile-wrapper div {
+  text-align: center;
+}
+
+.mob-brief-logo {
+  width: 61px;
+  height: 60px;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.mob-brief-title {
+  margin-top: 35px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.mob-brief-recommend {
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.mob-brief-like-buttons {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* common styles for checkbox buttons */
+label.form-item-checkbox-button {
+  position: relative;
+  display: inline-block;
+}
+
+.form-item-checkbox-button input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  z-index: -1;
+}
+
+.form-item-buttons-radio input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  z-index: -1;
+}
+
+/* specific styles for like buttons */
+.mob-brief-like-buttons .form-item-radio-button span {
+  width: 65px;
+  height: 65px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+/* checked style of like button*/
+.mob-brief-like-buttons .form-item-radio-button input:checked + span {
+  border: 2px solid #00A1FF;
+}
+
+
+.mob-brief-like-buttons .form-item-radio-button:last-child {
+  margin-left: 56px;
+}
+
+.mob-brief-like-buttons img {
+  width: 75%;
+}
+
+.mob-brief-question {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.mob-brief-services-buttons {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+.mob-brief-services-buttons .form-item-checkbox-button {
+  display: inline-block;
+  width: 100%;
+  margin-top: 7px;
+  color: #000;
+}
+
+.mob-brief-services-buttons .form-item-checkbox-button span {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.mob-brief-services-buttons .form-item-checkbox-button.half-width {
+  width: calc(50% - 4px);
+}
+
+.mob-brief-services-buttons .form-item-checkbox-button input:checked + span {
+  border: 2px solid #00A1FF;
+}
+
+.mob-brief-services-buttons .form-item-checkbox-button input:checked + span:after {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  border: 1px solid #00A1FF;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  content: "√";
+  font-size: 6px;
+  font-weight: bold;
+  line-height: 6px;
+  background-color: #f7ae6a;
+  color: #fff;
+  padding: 0px 0px 0px 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: rotate(10deg);
+}
+
+.form-send-button {
+  border: 0;
+  outline: none;
+  padding: 7px 42px 5px 42px;
+  color: #fff;
+  background-color: #0076BC;
+  box-shadow: 0px 2px 3px #00000029;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 190px;
+  height: 42px;
+}
+
+.mob-brief-send {
+  margin-top: 52px;
+  text-align: center;
+}
+
+.mob-brief-subtitle {
+  margin-top: 51px;
+}
+
+.mob-brief textarea {
+  margin: 25px 0 17px 0;
+  width: 100%;
+  height: 400px;
+  padding: 30px 16px;
+  color: #989898;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.mob-brief-message {
+  position: relative;
+}
+
+.mob-brief-nav-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #222222;
+  border-radius: 3px;
+  color: #3e3e3e;
+  font-size: 20px;
+  position: absolute;
+  bottom: 80px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mob-brief-nav-btn img {
+  width: 50%;
+  opacity: 0.7;
+}
+
+.mob-brief-nav-prev {
+  left: -9px;
+  transform: rotate(180deg);
+}
+
+.mob-brief-nav-next {
+  right: -9px;
+}

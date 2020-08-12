@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>[TITLE]</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- KEEP sequence -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" /> <!-- you can delete it -->
+    <link rel="stylesheet" type="text/css" href="semantic-ui/semantic.min.css" />
+    <link rel="stylesheet" type="text/css" href="semantic-ui-calendar/dist/calendar.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> <!-- existing styles -->
+    <link rel="stylesheet" type="text/css" href="css/style-new.css" />
+
+    <!-- Semantic UI init code -->
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="semantic-ui/semantic.min.js"></script>
+    <script type="text/javascript" src="semantic-ui-calendar/dist/calendar.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper innerpages">
+      <header>
+        <div class="left-panel">
+          <div class="logo"></div>
+        </div>
+  
+        <div class="main-panel">
+          <div class="header-title fs20 bold">Page title</div>
+        </div>
+      </header>
+      <div class="body-wrapper">
+        <div class="body-content">
+          <div class="left-panel">
+            <div class="left-panel-menu">
+              <div class="menu-group opened">
+                <div class="menu-group-title">Technology Suite</div>
+                <a class="menu-item" href="#">Home</a>
+                <a class="menu-item" href="#">Search</a>
+                <a class="menu-item" href="#">Auto Valuation</a>
+              </div>
+
+              <div class="menu-group">
+                <div class="menu-group-title">Payment Platform</div>
+                <a class="menu-item" href="#">Comissions</a>
+                <a class="menu-item menu-item-sub" href="#">Shedule Closing</a>
+              </div>
+
+              <div class="menu-group">
+                <div class="menu-group-title">More Information</div>
+                <a class="menu-item" href="#">Features</a>
+                <a class="menu-item" href="#">Pricing</a>
+                <a class="menu-item" href="#">About</a>
+              </div>
+            </div>
+          </div>
+          <div class="main-panel"> <!-- main block -->
+            <div class="main-panel-content"> <!-- block with page content -->
+              <form class="search-filter" action="" method="post">
+                <div class="search-filter-block1">
+                  <!-- Property Type, Status, Style, Stories -->
+                  <div class="search-filter-block1-top filter-items-2cols">
+                    <div class="form-item">
+                      <select class="ui dropdown" name="" multiple>
+                        <option value="">Property Type</option> <!-- item without value is a placeholder -->
+                        <option value="1">Item 1</option>
+                        <option value="2">Item 2</option>
+                        <option value="3">Item 3</option>
+                      </select>
+                    </div>
+                    <div class="form-item">
+                      <select class="ui dropdown" name="" multiple>
+                        <option value="">Status</option>
+                        <option value="1">Item 1</option>
+                      </select>
+                    </div>
+                    <div class="form-item">
+                      <select class="ui dropdown" name="" multiple>
+                        <option value="">Style</option>
+                        <option value="1">Item 1</option>
+                      </select>
+                    </div>
+                    <div class="form-item">
+                      <select class="ui dropdown" name="" multiple>
+                        <option value="">Stories</option>
+                        <option value="1">Item 1</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Location -->
+                  <div class="search-filter-group">
+                    <div class="search-filter-group-title fs14 bold center">Location</div>
+                    <div class="search-filter-group-items filter-items-2cols">
+                      <div class="form-item">
+                        <select class="ui dropdown" name="" multiple>
+                          <option value="">City</option>
+                          <option value="1">Item 1</option>
+                          <option value="2">Item 2</option>
+                          <option value="3">Item 3</option>
+                        </select>
+                      </div>
+                      <div class="form-item">
+                        <select class="ui dropdown" name="" multiple>
+                          <option value="">Zip Code</option>
+                          <option value="1">Item 1</option>
+                          <option value="2">Item 2</option>
+                          <option value="3">Item 3</option>
+                        </select>
+                      </div>
+
+                      <div class="form-item">
+                        <select class="ui dropdown" name="" multiple>
+                          <option value="">Postal City</option>
+                          <option value="1">Item 1</option>
+                          <option value="2">Item 2</option>
+                          <option value="3">Item 3</option>
+                        </select>
+                      </div>
+
+                      <div class="form-item">
+                        <select class="ui dropdown" name="" multiple>
+                          <option value="">Country</option>
+                          <option value="1">Item 1</option>
+                          <option value="2">Item 2</option>
+                          <option value="3">Item 3</option>
+                        </select>
+                      </div>
+
+                      <div class="form-item">
+                        <select class="ui dropdown" name="" multiple>
+                          <option value="">School District</option>
+                          <option value="1">Item 1</option>
+                          <option value="2">Item 2</option>
+                          <option value="3">Item 3</option>
+                        </select>
+                      </div>
+
+                      <div class="form-item">
+                        <select class="ui dropdown" name="" multiple>
+                          <option value="">State</option>
+                          <option value="1">Item 1</option>
+                          <option value="2">Item 2</option>
+                          <option value="3">Item 3</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="search-filter-block2">
+                  <div class="search-filter-block2-left">
+                    <div class="form-item">
+                      <select class="ui dropdown" name="" multiple>
+                        <option value="">Contingency</option>
+                        <option value="1">Item 1</option>
+                        <option value="2">Item 2</option>
+                        <option value="3">Item 3</option>
+                      </select>
+                    </div>
+
+                    <div class="form-item">
+                      <select class="ui dropdown" name="" multiple>
+                        <option value="">Stories</option>
+                        <option value="1">Item 1</option>
+                        <option value="2">Item 2</option>
+                        <option value="3">Item 3</option>
+                      </select>
+                    </div>
+
+                    <div class="form-item">
+                      <select class="ui dropdown" name="" multiple>
+                        <option value="">Acres</option>
+                        <option value="1">Item 1</option>
+                        <option value="2">Item 2</option>
+                        <option value="3">Item 3</option>
+                      </select>
+                    </div>
+
+                    <div class="form-item">
+                      <select class="ui dropdown" name="" multiple>
+                        <option value="">Distressed</option>
+                        <option value="1">Item 1</option>
+                        <option value="2">Item 2</option>
+                        <option value="3">Item 3</option>
+                      </select>
+                    </div>
+
+                    <div class="form-item">
+                      <select class="ui dropdown" name="" multiple>
+                        <option value="">Neighborhood</option>
+                        <option value="1">Item 1</option>
+                        <option value="2">Item 2</option>
+                        <option value="3">Item 3</option>
+                      </select>
+                    </div>
+
+                    <div class="form-item">
+                      <select class="ui dropdown" name="" multiple>
+                        <option value="">MPLS Community</option>
+                        <option value="1">Item 1</option>
+                        <option value="2">Item 2</option>
+                        <option value="3">Item 3</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="search-filter-block2-right">
+                    <div class="filter-items-group">
+                      <div class="form-item">
+                        <div class="ui input">
+                          <input type="text" placeholder="House Number">
+                        </div>
+                      </div>
+                      <div class="form-item">
+                        <div class="ui input">
+                          <input type="text" placeholder="Street Name">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="filter-items-group">
+                      <div class="form-item ui calendar">
+                        <div class="ui icon input">
+                          <input type="text" placeholder="List Date">
+                          <i class="calendar alternate outline icon"></i>
+                        </div>
+                      </div>
+                      <div class="form-item ui calendar">
+                        <div class="ui icon input">
+                          <input type="text" placeholder="Off Market Date">
+                          <i class="calendar alternate outline icon"></i>
+                        </div>
+                      </div>
+
+                      <div class="form-item ui calendar">
+                        <div class="ui icon input">
+                          <input type="text" placeholder="Closed Date">
+                          <i class="calendar alternate outline icon"></i>
+                        </div>
+                      </div>
+
+                      <div class="form-item ui calendar">
+                        <div class="ui icon input">
+                          <input type="text" placeholder="Expiration Date">
+                          <i class="calendar alternate outline icon"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Specifications -->
+                <div class="search-filter-block3">
+                  <div class="search-filter-group">
+                    <div class="search-filter-group-title fs14 bold center">Specifications</div>
+                    <div class="search-filter-group-items filter-items-2cols">
+                      <div class="form-item">
+                        <select class="ui dropdown" name="" multiple>
+                          <option value="">Total Units (MF Only)</option>
+                          <option value="1">Item 1</option>
+                          <option value="2">Item 2</option>
+                          <option value="3">Item 3</option>
+                        </select>
+                      </div>
+
+                      <div class="form-item">
+                        <select class="ui dropdown" name="" multiple>
+                          <option value="">Garage Stalls</option>
+                          <option value="1">Item 1</option>
+                          <option value="2">Item 2</option>
+                          <option value="3">Item 3</option>
+                        </select>
+                      </div>
+
+                      <div class="form-item">
+                        <select class="ui dropdown" name="" multiple>
+                          <option value="">Bedrooms</option>
+                          <option value="1">Item 1</option>
+                          <option value="2">Item 2</option>
+                          <option value="3">Item 3</option>
+                        </select>
+                      </div>
+
+                      <div class="form-item">
+                        <select class="ui dropdown" name="" multiple>
+                          <option value="">Year built</option>
+                          <option value="1">Item 1</option>
+                          <option value="2">Item 2</option>
+                          <option value="3">Item 3</option>
+                        </select>
+                      </div>
+
+                      <div class="form-item">
+                        <select class="ui dropdown" name="" multiple>
+                          <option value="">Bathrooms</option>
+                          <option value="1">Item 1</option>
+                          <option value="2">Item 2</option>
+                          <option value="3">Item 3</option>
+                        </select>
+                      </div>
+
+                      <div class="form-item">
+                        <select class="ui dropdown" name="" multiple>
+                          <option value="">Total Finished Sq. Ft</option>
+                          <option value="1">Item 1</option>
+                          <option value="2">Item 2</option>
+                          <option value="3">Item 3</option>
+                        </select>
+                      </div>
+
+                      <div class="form-item">
+                        <select class="ui dropdown" name="" multiple>
+                          <option value="">Above Groudn Sq. Ft.</option>
+                          <option value="1">Item 1</option>
+                          <option value="2">Item 2</option>
+                          <option value="3">Item 3</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Add / Remove Fields -->
+                <div class="search-filter-block4">
+                  <div class="search-filter-group">
+                    <div class="search-filter-group-title fs14 bold center">Add / Remove Fields</div>
+                    <div class="form-item">
+                      <select class="ui dropdown" name="" multiple>
+                        <option value="">Fields</option>
+                        <option value="1">Item 1</option>
+                        <option value="2">Item 2</option>
+                        <option value="3">Item 3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <form class="search-results" action="" method="post">
+                <div class="search-results-header">
+                  <div class="search-results-header-left">
+                    <button class="search-results-header-item results-item-found-count bold">
+                      6 Results
+                    </button>
+                    <button class="search-results-header-item">List</button>
+                    <button class="search-results-header-item">Map</button>
+                    <button class="search-results-header-item">Clear</button>
+                  </div>
+                  <div class="search-results-header-right">
+                    <span class="search-results-header-item search-results-header-emails bold">Email - 0 assigned</span>
+                  </div>
+                </div>
+
+                <table class="search-results-list">
+                  <tr>
+                    <td>MLS</td>
+                    <td><a href="#">564912</a></td>
+                    <td>11364 Arrowhead Street, Hugo, MN 55555</td>
+                    <td>$336.00</td>
+                    <td>
+                      <div class="form-item">
+                        <select class="ui dropdown" name="" multiple>
+                          <option value="">Select Recipient</option>
+                          <option value="1">Item 1</option>
+                          <option value="2">Item 2</option>
+                          <option value="3">Item 3</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td><a href="#">Create New</a></td>
+                  </tr>
+                  <tr>
+                    <td>MLS</td>
+                    <td><a href="#">564912</a></td>
+                    <td>11364 Arrowhead Street, Hugo, MN 55555</td>
+                    <td>$336.00</td>
+                    <td>
+                      <div class="form-item">
+                        <select class="ui dropdown" name="" multiple>
+                          <option value="">Select Recipient</option>
+                          <option value="1">Item 1</option>
+                          <option value="2">Item 2</option>
+                          <option value="3">Item 3</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td><a href="#">Create New</a></td>
+                  </tr>
+                  <tr>
+                    <td>MLS</td>
+                    <td><a href="#">564912</a></td>
+                    <td>11364 Arrowhead Street, Hugo, MN 55555</td>
+                    <td>$336.00</td>
+                    <td>
+                      <div class="form-item">
+                        <select class="ui dropdown" name="" multiple>
+                          <option value="">Select Recipient</option>
+                          <option value="1">Item 1</option>
+                          <option value="2">Item 2</option>
+                          <option value="3">Item 3</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td><a href="#">Create New</a></td>
+                  </tr>
+                </table>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="date-popup">
+      <div class="date-popup-content">
+        <div class="date-popup-header">
+          Date: <span></span>
+        </div>
+
+        <div class="date-popup-item ui checkbox">
+          <input type="checkbox" class="j-range">
+          <label class="helvectica-light">Date type: Range/From/To </label>
+        </div>
+
+        <div class="date-popup-item calendars">
+          <div class="calendar-item date-from">
+            <div class="calendar-title">
+              <label>Date</label>
+              <button class="form-send-button btn-unsel">Unselect</button>
+            </div>
+            <div class="input">
+              <input type="hidden" />
+            </div>
+          </div>
+
+          <div class="calendar-item date-to">
+            <div class="calendar-title">
+              <label>Date To</label>
+              <button class="form-send-button btn-unsel">Unselect</button>
+            </div>
+            <div class="input">
+              <input type="hidden" />
+            </div>
+          </div>
+        </div>
+
+        <div class="date-popup-errors"></div>
+
+        <div class="date-popup-item buttons">
+          <button class="form-send-button btn-cancel j-cancel">Cancel</button>
+          <button class="form-send-button j-ok">OK</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+.login-page {
+  justify-content: center;
+  align-items: center;
+  background-color: #989797;
+  font-size: 12px;
+}
+
+.login-page *,
+.login-page select,
+.login-page input,
+.login-page textarea {
+  font-family: 'Helvetica Neue Regular', serif;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.login-page button {
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+}
+
+.login-page .login-panel {
+  background-color: #fff;
+  width: 926px;
+  min-height: 591px;
+  padding: 64px 35px 64px 49px;
+  border-radius: 25px;
+  display: flex;
+}
+
+.login-panel-divider {
+  width: 10px;
+  margin: 0px 45px 0px 40px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: #000;
+}
+
+.login-panel-logo {
+  width: 220px;
+  height: 167px;
+  background: url('../img/logo.png') 50% 50% no-repeat;
+  background-size: contain;
+}
+/* if you really need here
+@media only screen and (min-device-pixel-ratio: 1.2) {
+  .login-page ._logo {
+    background-image: url('../img/logo@2x.png');
+  }
+}
+
+@media only screen and (min-device-pixel-ratio: 2.2) {
+  .login-page ._logo {
+    background-image: url('../img/logo@3x.png');
+  }
+}
+*/
+
+.login-panel-left-title {
+  font-size: 20px;
+}
+
+.login-panel-left-subtitle {
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.login-panel-right {
+  margin-top: 52px;
+  width: 336px;
+  flex-shrink: 0;
+}
+
+.login-panel-fields {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.login-panel-fields input {
+  padding: 8px 15px;
+  border: 1px solid #363636;
+  border-radius: 5px;
+  width: calc(50% - (12px / 2));
+  margin-bottom: 11px;
+}
+
+.login-panel-button {
+  background-color: #009DFF;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 162px;
+  height: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-panel-register-agree {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.login-panel-register-agree input {
+  margin-right: 10px;
+  position: relative;
+  top: -2px;
+}
+
+.login-panel-register-agree a {
+  text-decoration: none;
+}
+
+.login-panel-login {
+  margin-top: 35px;
+}
+
+.login-panel-login ._btn-wrapper {
+  text-align: center;
+}

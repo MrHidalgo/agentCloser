@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>[TITLE]</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- KEEP sequence -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" /> <!-- you can delete it -->
+    <link rel="stylesheet" type="text/css" href="semantic-ui/semantic.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> <!-- existing styles -->
+    <link rel="stylesheet" type="text/css" href="css/style-new.css" />
+
+    <!-- Semantic UI init code -->
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="semantic-ui/semantic.min.js"></script>
+    <script type="text/javascript" src="semantic-ui-calendar/dist/calendar.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper innerpages">
+      <header>
+        <div class="left-panel">
+          <div class="logo"></div>
+        </div>
+  
+        <div class="main-panel">
+          <div class="header-title fs20 bold">Page title</div>
+          <div class="header-buttons">
+            <a href="javascript:back();"><i class="icon angle left"></i><span>Back</span></a>
+          </div>
+        </div>
+      </header>
+      <div class="body-wrapper">
+        <div class="body-content">
+          <div class="left-panel">
+            <div class="left-panel-menu">
+              <div class="menu-group opened">
+                <div class="menu-group-title">Technology Suite</div>
+                <a class="menu-item" href="#">Home</a>
+                <a class="menu-item" href="#">Search</a>
+                <a class="menu-item" href="#">Auto Valuation</a>
+              </div>
+
+              <div class="menu-group">
+                <div class="menu-group-title">Payment Platform</div>
+                <a class="menu-item" href="#">Comissions</a>
+                <a class="menu-item menu-item-sub" href="#">Shedule Closing</a>
+              </div>
+
+              <div class="menu-group">
+                <div class="menu-group-title">More Information</div>
+                <a class="menu-item" href="#">Features</a>
+                <a class="menu-item" href="#">Pricing</a>
+                <a class="menu-item" href="#">About</a>
+              </div>
+            </div>
+          </div>
+          <div class="main-panel"> <!-- main block -->
+            <div class="main-panel-content no-top-margin"> <!-- block with page content -->
+              <form class="email-form form-background" action="" method="post">
+                <div class="email-form-left">
+                  <div class="form-fields-group-titled">
+                    <div class="form-fields-group-title">
+                      Who do you want to send this to?
+                    </div>
+                    <div class="form-fields-group-item">
+                      <label>To</label>
+                      <div class="form-item">
+                        <select class="ui dropdown" name="" multiple>
+                          <option value="1">Item 1</option>
+                          <option value="2">Item 2</option>
+                          <option value="3">Item 3</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="email-form-cc-bcc">
+                      <div class="form-fields-group-item">
+                        <label>Cc</label>
+                        <div class="form-item">
+                          <select class="ui dropdown" name="" multiple>
+                            <option value="1">Item 1</option>
+                            <option value="2">Item 2</option>
+                            <option value="3">Item 3</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-fields-group-item">
+                        <label>Bcc</label>
+                        <div class="form-item">
+                          <select class="ui dropdown" name="" multiple>
+                            <option value="1">Item 1</option>
+                            <option value="2">Item 2</option>
+                            <option value="3">Item 3</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-fields-group-titled">
+                    <div class="form-fields-group-title">
+                      What do you want to display in the ‘From’ field?
+                    </div>
+                    <div class="form-fields-group-item">
+                      <label></label>
+                      <div class="form-item">
+                        <div class="ui input">
+                          <input type="text" placeholder="placeholder text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-fields-group-titled">
+                    <div class="form-fields-group-title">
+                      What should it say?
+                    </div>
+                    <div class="form-fields-group-item">
+                      <label>Subject</label>
+                      <div class="form-item">
+                        <div class="ui input">
+                          <input type="text" placeholder="placeholder text">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-fields-group-item">
+                      <label class="flex-align-self-start">Message</label>
+                      <div class="form-item ui form">
+                        <textarea></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-fields-group-titled">
+                    <div class="form-fields-group-title">
+                      How do you want your signature to appear?
+                    </div>
+
+                    <div class="form-fields-group-item">
+                      <div class="form-item ui form">
+                        <textarea></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-fields-group-titled">
+                    <div class="form-fields-group-title">
+                      Do you want replies sent to a different email?
+                    </div>
+                    <div class="form-fields-group-item">
+                      <label>Email</label>
+                      <div class="form-item"> 
+                        <div class="ui input">
+                          <input type="text" placeholder="placeholder text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-fields-group-titled">
+                    <div class="form-fields-group-title">
+                      How often do you want to send updates?
+                    </div>
+                    <div class="form-fields-group-item">
+                      <div class="form-item-buttons-radio">
+                        <!-- all inputs name must be identical is this group -->
+                        <label class="form-item-buttons-radio-button">
+                          <input type="radio" name="test-radio" value="1" />
+                          <span>ASAP</span>
+                        </label>
+
+                        <label class="form-item-buttons-radio-button">
+                          <input type="radio" name="test-radio" value="2" />
+                          <span>Daily</span>
+                        </label>
+
+                        <label class="form-item-buttons-radio-button">
+                          <input type="radio" name="test-radio" value="3" />
+                          <span>Monthly</span>
+                        </label>
+
+                        <label class="form-item-buttons-radio-button">
+                          <input type="radio" name="test-radio" value="4" />
+                          <span>Quarterly</span>
+                        </label>
+
+                        <label class="form-item-buttons-radio-button">
+                          <input type="radio" name="test-radio" value="5" />
+                          <span>Bi-Annually</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-action-buttons"> 
+                    <button class="form-send-button" type="submit">Send</button>
+                  </div>
+                </div>
+
+                <div class="email-form-right"> <!-- right side with mobile preview -->
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
